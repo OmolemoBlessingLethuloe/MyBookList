@@ -1,3 +1,35 @@
+  
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Fade in tabs */
+
+body{
+    animation: fadeEffect 3s;
+}
+/* 
+@--keyframes fadeeffect {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  } */
+  
+@keyframes fadeEffect {
+    from {
+      opacity: 0.5;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
 body,button {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -9,6 +41,7 @@ body,button {
     margin-bottom: 0px;
     border-left: solid 1px white;
     border-bottom: solid 1px white;
+    animation: myBottom 2s ;
 }
 
 .corner2 {
@@ -19,6 +52,16 @@ body,button {
     /* margin-bottom: 0px; */
     border-right: solid 1px white;
     border-top: solid 1px white;
+    animation: myTop 2s ;
+}
+@keyframes myBottom {
+    from {height: 200px; width:1500px;}
+    to   {height: 70px; width: 70px;}
+  }
+
+@keyframes myTop {
+    from {width: 1500px;}
+    to {width: 70px;}
 }
 .landingPageBanner {
     /* height: 90vh; */
@@ -32,7 +75,7 @@ body,button {
     justify-content: center;
     align-items: center;
     height: 650px;
-    opacity: 0.75;
+    opacity: 0.9;
     /* margin: 0 auto; */
   }
 
@@ -133,8 +176,8 @@ body,button {
 	margin-top: 8px;
     border: none;
 	border-radius: 0%;
-	border-bottom: 1.5px solid chocolate;
-    border-left: 1.5px solid chocolate;
+	border-bottom: 1.5px solid rgb(209, 179, 160);;
+    border-left: 1.5px solid rgb(209, 179, 160);;
 	background: transparent;
 	color: white;
 }
@@ -156,12 +199,12 @@ body,button {
 
 #bookForm input[type="text"] {
     /* align-self: flex-start; */
-    width: 400px;
+    width: 440px;
     height: 20px;
     border: none;
     display: flex;
     padding: 20px;
-    border-bottom: solid 2px chocolate;
+    border-bottom: solid 2px rgb(209, 179, 160);;
     /* margin-right: -1000px; */
 }
 

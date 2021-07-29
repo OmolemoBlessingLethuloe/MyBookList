@@ -34,7 +34,7 @@ heading.textContent = "My";
 span.textContent = "Book"; 
 description.textContent = " “A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.” ― George R.R. Martin";
 listButton.textContent = "MyList";
-headingLastPart.textContent = "List";
+headingLastPart.textContent = "List.";
 
 // appending elements to parent div
 banner.appendChild(corner2);
