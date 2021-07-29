@@ -1,0 +1,188 @@
+body,button {
+    font-family: 'Courier New', Courier, monospace;
+}
+.corner1 {
+    width: 70px;
+    height: 70px;
+    align-self: flex-start;
+    margin-left: 65px;
+    margin-bottom: 0px;
+    border-left: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.corner2 {
+    width: 70px;
+    height: 70px;
+    align-self: flex-end;
+    margin-right: 65px;
+    /* margin-bottom: 0px; */
+    border-right: solid 1px white;
+    border-top: solid 1px white;
+}
+.landingPageBanner {
+    /* height: 90vh; */
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("landingPage.jfif") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    opacity: 0.75;
+    /* margin: 0 auto; */
+  }
+
+.heading {
+    color: #fff;;
+    font-size: 100px;
+    margin-left: 65px;
+    align-self: flex-start;
+}
+.headingSpan {
+    color: rgb(192, 134, 95);
+}
+.headingEnd {
+    color: #fff;;
+    font-size: 100px;
+    /* margin-left: 65px; */
+    align-self: flex-start;
+}
+  
+.description {
+    color: #fff;
+    font-size: 20px;
+    align-self: flex-end;
+    margin-right: 50px;
+    margin-left: 60px;
+    font-weight: bolder;
+}
+
+.listButton {
+    padding: 10px 30px;
+    background: transparent;
+    border: solid 1px white;
+    color: white;
+    height: 50px;
+    width: 150px;
+    align-self: flex-end;
+    margin-right: 65px;
+    font-size: large;
+    border-radius: 0%;
+  }
+
+.listButton:hover {
+    border: solid 1px rgb(192, 134, 95);
+    color: rgb(192, 134, 95);
+}
+
+.headerPicture {
+    /* height: 90vh; */
+    /* position: fixed; */
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("header.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    opacity: 0.75;
+      /* margin: 0 auto; */
+
+}
+
+.heading1 {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 50px;
+    align-self: flex-start;
+    margin-top: 30px;
+}
+.headingSpan1 {
+    color: rgb(192, 134, 95);
+}
+
+.heading2 {
+    color: #fff;
+    font-size: 40px;
+    /* margin-left: 50px; */
+    align-self: flex-start;
+    /* margin-top: 30px; */
+}
+.smallDescription {
+    color: white;
+    align-self: flex-end;
+    margin-right: 50px;
+    font-weight: bolder;
+}
+.searchContainer {
+	margin-left: 50px; 
+    align-self: flex-start;
+
+}
+.searchContainer input[type="text"] {
+	padding: 6px;
+	width: 180px;
+	font-size: 15px;
+	margin-top: 8px;
+    border: none;
+	border-radius: 0%;
+	border-bottom: 1.5px solid chocolate;
+    border-left: 1.5px solid chocolate;
+	background: transparent;
+	color: white;
+}
+.searchContainer input[type="text"]:focus {
+	border: 3px solid white;
+	/* background: white; */
+}
+
+#bookForm {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* column-gap: -100px; */
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+
+}
+
+#bookForm input[type="text"] {
+    /* align-self: flex-start; */
+    width: 400px;
+    height: 20px;
+    border: none;
+    display: flex;
+    padding: 20px;
+    border-bottom: solid 2px chocolate;
+    /* margin-right: -1000px; */
+}
+
+#bookForm label{
+    /* margin-left: -600px; */
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.addButton {
+    width: 440px;
+    height: 35px;
+    font-size: larger;
+    border: solid 1px white;
+    color: white;
+    background-color: rgb(209, 179, 160);
+}
+.addButton:hover {
+    background-color: transparent;
+    color: rgb(209, 179, 160);
+    border: solid 1px rgb(209, 179, 160);
+}
+
