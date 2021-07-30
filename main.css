@@ -84,9 +84,11 @@ body,button {
     font-size: 100px;
     margin-left: 65px;
     align-self: flex-start;
+    /* text-shadow: 2px 2px 2px rgb(204, 165, 126); */
 }
 .headingSpan {
     color: rgb(192, 134, 95);
+    /* text-shadow: 2px 2px 2px rgb(204, 165, 126); */
 }
 .headingEnd {
     color: #fff;;
@@ -115,6 +117,7 @@ body,button {
     margin-right: 65px;
     font-size: large;
     border-radius: 0%;
+    /* font-weight: bold; */
   }
 
 .listButton:hover {
@@ -133,7 +136,7 @@ body,button {
 .signUp, .logIn {
     background: transparent;
     border: none;
-    border-left: solid 1px white;
+    border-right: solid 1px white;
     color: white;
     height: 30px;
     width: 150px;
@@ -141,10 +144,15 @@ body,button {
     /* margin-right: 65px; */
     font-size: large;
     border-radius: 0%;
+    /* font-weight: bold; */
 }
 .signUp:hover, .logIn:hover {
-    border-left: solid 1px rgb(192, 134, 95);
+    border-right: solid 1px rgb(192, 134, 95);
     color: rgb(192, 134, 95);
+}
+
+.fas {
+    font-size: 30px;
 }
 
 .headerPicture {

@@ -1,9 +1,9 @@
 // adding external stylesheet
-let element = document.createElement("link");
-element.setAttribute("rel", "stylesheet");
-element.setAttribute("type", "text/css");
-element.setAttribute("href", "main.css");
-document.getElementsByTagName("head")[0].appendChild(element);
+// let element = document.createElement("link");
+// element.setAttribute("rel", "stylesheet");
+// element.setAttribute("type", "text/css");
+// element.setAttribute("href", "main.css");
+// document.getElementsByTagName("head")[0].appendChild(element);
 
 // parent nodes
 const landingPage = document.getElementById("landingPage");
@@ -21,6 +21,7 @@ let listButton = document.createElement("button");
 let nav = document.createElement("div");
 let signUp = document.createElement("button");
 let logIn = document.createElement("button");
+let logo = document.createElement("i");
 
 // adding classList attributes for styling
 corner1.classList = "corner1";
@@ -35,6 +36,7 @@ headingLastPart.classList = "headingEnd";
 nav.classList = "navigation";
 signUp.classList = "signUp";
 logIn.classList = "logIn";
+logo.classList = "fas fa-book-open";
 
 // assigning text to element variables
 heading.textContent = "My";
@@ -47,6 +49,7 @@ signUp.textContent = "SignUp";
 logIn.textContent = "LogIn";
 
 // appending elements to parent div
+nav.appendChild(logo);
 nav.appendChild(signUp);
 nav.appendChild(logIn);
 banner.appendChild(nav);
