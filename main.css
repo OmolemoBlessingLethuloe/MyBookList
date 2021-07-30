@@ -60,7 +60,7 @@ body,button {
   }
 
 @keyframes myTop {
-    from {width: 1500px;}
+    from {width: 900px;}
     to {width: 70px;}
 }
 .landingPageBanner {
@@ -119,6 +119,31 @@ body,button {
 
 .listButton:hover {
     border: solid 1px rgb(192, 134, 95);
+    color: rgb(192, 134, 95);
+}
+
+.navigation {
+    /* display: flex; */
+    align-self: flex-start;
+    color: white;
+    column-gap: 100%;
+    margin-left: 65px;
+    font-weight: bolder;
+}
+.signUp, .logIn {
+    background: transparent;
+    border: none;
+    border-left: solid 1px white;
+    color: white;
+    height: 30px;
+    width: 150px;
+    align-self: flex-end;
+    /* margin-right: 65px; */
+    font-size: large;
+    border-radius: 0%;
+}
+.signUp:hover, .logIn:hover {
+    border-left: solid 1px rgb(192, 134, 95);
     color: rgb(192, 134, 95);
 }
 

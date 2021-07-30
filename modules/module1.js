@@ -18,6 +18,10 @@ let headingLastPart = document.createElement("span");
 let description = document.createElement('p');
 let listButton = document.createElement("button");
 
+let nav = document.createElement("div");
+let signUp = document.createElement("button");
+let logIn = document.createElement("button");
+
 // adding classList attributes for styling
 corner1.classList = "corner1";
 corner2.classList = "corner2";
@@ -27,7 +31,10 @@ description.classList ="description";
 listButton.classList ="listButton";
 span.classList = "headingSpan";
 headingLastPart.classList = "headingEnd";
-        
+
+nav.classList = "navigation";
+signUp.classList = "signUp";
+logIn.classList = "logIn";
 
 // assigning text to element variables
 heading.textContent = "My";
@@ -36,7 +43,13 @@ description.textContent = " “A reader lives a thousand lives before he dies, s
 listButton.textContent = "MyList";
 headingLastPart.textContent = "List.";
 
+signUp.textContent = "SignUp";
+logIn.textContent = "LogIn";
+
 // appending elements to parent div
+nav.appendChild(signUp);
+nav.appendChild(logIn);
+banner.appendChild(nav);
 banner.appendChild(corner2);
 heading.appendChild(headingLastPart);
 heading.insertBefore(span,headingLastPart);
