@@ -167,7 +167,7 @@ body,button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 130px;
     opacity: 0.75;
       /* margin: 0 auto; */
 
@@ -237,7 +237,7 @@ body,button {
     border: none;
     display: flex;
     padding: 20px;
-    border-bottom: solid 2px rgb(209, 179, 160);;
+    border-bottom: solid 2px rgb(192, 134, 95);
     /* margin-right: -1000px; */
 }
 
@@ -252,13 +252,45 @@ body,button {
     width: 440px;
     height: 35px;
     font-size: larger;
-    border: solid 1px white;
-    color: white;
-    background-color: rgb(209, 179, 160);
+    border: solid 1px rgb(192, 134, 95);
+    color: rgb(192, 134, 95);
+    background-color: transparent;
+
 }
 .addButton:hover {
-    background-color: transparent;
-    color: rgb(209, 179, 160);
-    border: solid 1px rgb(209, 179, 160);
+    background-color: rgb(192, 134, 95);
+    color: white;
+    border: solid 1px rgb(192, 134, 95);
+}
+
+.bookTable, th, td{
+    width: 70%;
+    margin: 50px auto;
+    border: solid 1px rgb(192, 134, 95);
+    /* border-top: none; */
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: auto;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+th {
+    font-weight: bolder;
+    background-color: rgb(192, 134, 95);
+    opacity: 0.8;
+    color: white;
+    /* border-top: none; */
+}
+.deleteButton {
+    margin: 15px;
+    background-color: rgb(192, 134, 95);
+    border: none;
+    color: white;
 }
 
