@@ -61,6 +61,7 @@ banner.appendChild(description);
 banner.appendChild(listButton);
 landingPage.appendChild(banner);
 banner.appendChild(corner1);
+ 
 
 
     
