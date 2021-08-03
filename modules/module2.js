@@ -12,7 +12,7 @@ const myBody = document.querySelector("body");
 
 let form = document.getElementById("bookForm");
 let itemList = document.getElementById("bookAdded");
-let filter = document.getElementById("filter");
+let filter = document.getElementsByClassName("searchBar");
 
 // form submit event
 myBody.addEventListener('submit', addItem);
@@ -21,7 +21,9 @@ myBody.addEventListener('submit', addItem);
 myBody.addEventListener('click', removeItem);
 
 // filter event
-// myBody.addEventListener('keyup', filterItems);
+for (var i = 0 ; i < filter.length; i++) {
+    filter[i].addEventListener('keyup', filterItems);
+}
 
 // creating elements
 let headerPicture = document.createElement("div");
@@ -31,8 +33,8 @@ let header3 = document.createElement("span");
 let logo = document.createElement("i");
 let smallDescription = document.createElement("p");
 
-let searchContainer = document.createElement("form");
-let searchBar = document.createElement("input");
+// let searchContainer = document.createElement("form");
+// let searchBar = document.createElement("input");
 
 let bookForm = document.createElement("form");
 let titleDiv = document.createElement("div");
@@ -62,8 +64,8 @@ header2.classList = "headingSpan1";
 header3.classList = "heading2";
 smallDescription.classList = "smallDescription";
 
-searchContainer.classList = "searchContainer";
-searchBar.classList = "searchBar";
+// searchContainer.classList = "searchContainer";
+// searchBar.classList = "searchBar";
 
 bookForm.id = "bookForm";
 titleDiv.classList = "form-group";
@@ -85,8 +87,8 @@ bookTable.classList = "bookTable";
 
 
 // setting attributes to elements
-searchBar.setAttribute("type","text");
-searchBar.setAttribute("placeholder","Search for books..")
+// searchBar.setAttribute("type","text");
+// searchBar.setAttribute("placeholder","Search for books..")
 
 titleLabel.setAttribute("for","title");
 titleInput.setAttribute("type","text");
@@ -131,6 +133,8 @@ function addItem(e) {
     let tdISBN = document.createElement("td");
     let tableRow2 = document.createElement("tr");
 
+    tableRow2.classList = "bookRow";
+
    // adding text node with input value
    tdTitle.textContent= newTitle;
    tdAuthor.textContent= newAuthor;
@@ -167,14 +171,44 @@ function removeItem(e) {
     }
 }
 
+// filter items
+// function filterItems(e){
+//     // covert search to lowercase
+//     let input, filter, table, tr, td, i, txtValue;
+//     input = document.getElementsByClassName("searchBar");
+//     let searchText = e.target.value.toLowerCase();
+//     table = document.getElementsByClassName("bookTable")
+//     tr = table.getElementsByTagName("tr");
+//     for (i = 0; i< tr.length; i++) {
+//         td = table.getElementsByTagName("td")[0];
+//         if (td) {
+//             txtValue = td.textContent;
+//             if (txtValue.toLowerCase().indexOf(filter) > -1) {
+//                 tr[i].style.display = '';
+//             } else {
+//                 tr[i].style.display = "none";
+//             }
+//         }
+//     }
+//     // convert to an array
+//     // Array.from(bookSearch).forEach(function(book){
+//     //     let bookProperty = book.firstChild.textContent;
+//     //     if (bookProperty.toLowerCase().indexOf(searchText) != -1) {
+//     //         book.style.display = 'block';
+//     //     } else {
+//     //         book.style.display = 'none';
+//     //     }
+//     // });
+// }
+
 // appending elements
 myHeader.appendChild(headerPicture);
 headerPicture.appendChild(header1);
 header1.appendChild(header3);
 header1.insertBefore(header2,header3);
 headerPicture.appendChild(smallDescription);
-searchContainer.appendChild(searchBar);
-headerPicture.appendChild(searchContainer);
+// searchContainer.appendChild(searchBar);
+// headerPicture.appendChild(searchContainer);
 
 titleDiv.appendChild(titleLabel);
 titleDiv.appendChild(titleInput);
@@ -191,8 +225,8 @@ bookForm.appendChild(ISBNDiv);
 bookForm.appendChild(addButton);
 
 myHeader.appendChild(bookForm);
-searchContainer.appendChild(searchBar);
-myHeader.appendChild(searchContainer);
+// searchContainer.appendChild(searchBar);
+// myHeader.appendChild(searchContainer);
 
 tableRow.appendChild(titleHeading);
 tableRow.appendChild(authorHeading);
@@ -200,14 +234,5 @@ tableRow.appendChild(ISBNHeading);
 tableRow.appendChild(emptySpace);
 bookTable.appendChild(tableRow);
 myHeader.appendChild(bookTable);
-
-
-
-
-
-
-
-
-
 
 
