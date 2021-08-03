@@ -8,7 +8,7 @@ document.getElementsByTagName("head")[0].appendChild(element);
 // parent nodes
 const myHeader = document.getElementById("main-header");
 const myBody = document.querySelector("body");
-// const js = document.querySelector("script");
+const myScript = document.querySelector("script");
 
 let form = document.getElementById("bookForm");
 let itemList = document.getElementById("bookAdded");
@@ -48,7 +48,7 @@ let ISBNLabel = document.createElement("label");
 let ISBNInput = document.createElement("input");
 let addButton = document.createElement("button");
 
-let addedBookSection = document.createElement("section");
+// let addedBookSection = document.createElement("section");
 let bookTable = document.createElement("table");
 let tableRow = document.createElement("tr");
 let titleHeading = document.createElement("th")
@@ -56,8 +56,28 @@ let authorHeading = document.createElement("th");
 let ISBNHeading = document.createElement("th");
 let emptySpace = document.createElement("th");
 
+let footer = document.createElement("footer");
+let footerPicture = document.createElement("div");
+let footerBottom = document.createElement("div");
+let subscription = document.createElement("div");
+let joinUs = document.createElement("p");
+let joinForm = document.createElement("form");
+let joinInput = document.createElement("input");
+let joinButton = document.createElement("button");
+let lineBreaks = document.createElement("br");
+
+let jumpToTop = document.createElement("button");
+let anchor = document.createElement("a");
+let arrow = document.createElement("i");
+
+let icons = document.createElement("div");
+let facebook = document.createElement("i");
+let twitter = document.createElement("i");
+let instagram = document.createElement("i");
+
 
 // adding classList
+headerPicture.id = "header";
 headerPicture.classList = "headerPicture";
 header1.classList = "heading1";
 header2.classList = "headingSpan1";
@@ -82,8 +102,25 @@ ISBNInput.id = "ISBN";
 ISBNInput.classList = "ISBNInput";
 addButton.classList = "addButton";
 
-addedBookSection.classList = "addedBookSection";
+// addedBookSection.classList = "addedBookSection";
 bookTable.classList = "bookTable";
+
+footer.classList = "footer";
+footerPicture.classList = "footerPicture";
+footerBottom.classList = "footerBottom";
+subscription.classList = "subscription";
+joinUs.classList = "joinUs";
+joinForm.classList = "joinForm";
+joinInput.classList = "joinInput";
+joinButton.classList = "joinButton";
+
+jumpToTop.id = "jumpToTop";
+arrow.classList = "fa fa-angle-up";
+
+icons.classList = "icons";
+facebook.classList = "fab fa-facebook";
+twitter.classList = "fab fa-twitter";
+instagram.classList = "fab fa-instagram";
 
 
 // setting attributes to elements
@@ -101,6 +138,13 @@ titleInput.setAttribute("required", '');
 authorInput.setAttribute("required", '');
 ISBNInput.setAttribute("required", '');
 
+joinInput.setAttribute("type","text");
+joinInput.setAttribute("required","");
+joinInput.setAttribute("placeholder","Email*");
+joinButton.setAttribute("type","submit");
+
+anchor.setAttribute("href","#header");
+
 // assigning text to element variables
 header1.textContent = "My";
 header2.textContent = "Book"; 
@@ -115,6 +159,9 @@ titleHeading.textContent = "Title";
 authorHeading.textContent = "Author";
 ISBNHeading.textContent = "ISBN Number";
 
+footerBottom.textContent = "© 2021 by MyBookList. Proudly created by Omolemo & Rethabile.";
+joinUs.textContent = "JoinUs!";
+joinButton.textContent = "Subscribe"
 
 // functions
 // add item function
@@ -158,6 +205,7 @@ function addItem(e) {
    tableRow2.appendChild(tdISBN);
    tableRow2.appendChild(deleteButton);
    bookTable.appendChild(tableRow2);
+   alert("Book successfully added.");
 }
 
 // removing books
@@ -167,6 +215,7 @@ function removeItem(e) {
         if (confirm("Are you sure?")) {
             let row = e.target.parentElement;
             bookTable.removeChild(row);
+            alert("Book successfully removed.")
         }
     }
 }
@@ -234,5 +283,24 @@ tableRow.appendChild(ISBNHeading);
 tableRow.appendChild(emptySpace);
 bookTable.appendChild(tableRow);
 myHeader.appendChild(bookTable);
+
+myBody.insertBefore(footer,myScript);
+footer.appendChild(footerPicture);
+footer.appendChild(footerBottom);
+
+subscription.appendChild(joinUs);
+subscription.appendChild(joinForm);
+icons.appendChild(facebook);
+icons.appendChild(twitter);
+icons.appendChild(instagram);
+subscription.appendChild(icons);
+joinForm.appendChild(joinInput);
+joinForm.appendChild(lineBreaks);
+joinForm.appendChild(joinButton);
+footerPicture.appendChild(subscription);
+
+myBody.insertBefore(jumpToTop,myScript);
+jumpToTop.appendChild(anchor);
+anchor.appendChild(arrow);
 
 
