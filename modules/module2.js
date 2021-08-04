@@ -1,3 +1,5 @@
+//export function module_2(){
+
 // adding external stylesheet
 let element = document.createElement("link");
 element.setAttribute("rel", "stylesheet");
@@ -86,7 +88,7 @@ smallDescription.classList = "smallDescription";
 
 // searchContainer.classList = "searchContainer";
 // searchBar.classList = "searchBar";
-
+footer.id='footer'
 bookForm.id = "bookForm";
 titleDiv.classList = "form-group";
 titleLabel.classList = "titleLabel";
@@ -105,22 +107,22 @@ addButton.classList = "addButton";
 // addedBookSection.classList = "addedBookSection";
 bookTable.classList = "bookTable";
 
-footer.classList = "footer";
-footerPicture.classList = "footerPicture";
-footerBottom.classList = "footerBottom";
-subscription.classList = "subscription";
-joinUs.classList = "joinUs";
-joinForm.classList = "joinForm";
-joinInput.classList = "joinInput";
-joinButton.classList = "joinButton";
+// //footer.classList = "footer";
+// //footerPicture.classList = "footerPicture";
+// //footerBottom.classList = "footerBottom";
+// //subscription.classList = "subscription";
+// joinUs.classList = "joinUs";
+// joinForm.classList = "joinForm";
+// joinInput.classList = "joinInput";
+// joinButton.classList = "joinButton";
 
 jumpToTop.id = "jumpToTop";
-arrow.classList = "fa fa-angle-up";
+arrow.classList = "fa fa-angle-down";
 
-icons.classList = "icons";
-facebook.classList = "fab fa-facebook";
-twitter.classList = "fab fa-twitter";
-instagram.classList = "fab fa-instagram";
+// icons.classList = "icons";
+// facebook.classList = "fab fa-facebook";
+// twitter.classList = "fab fa-twitter";
+// instagram.classList = "fab fa-instagram";
 
 
 // setting attributes to elements
@@ -138,15 +140,15 @@ titleInput.setAttribute("required", '');
 authorInput.setAttribute("required", '');
 ISBNInput.setAttribute("required", '');
 
-joinInput.setAttribute("type","text");
-joinInput.setAttribute("required","");
-joinInput.setAttribute("placeholder","Email*");
-joinButton.setAttribute("type","submit");
+//joinInput.setAttribute("type","text");
+//joinInput.setAttribute("required","");
+//joinInput.setAttribute("placeholder","Email*");
+//joinButton.setAttribute("type","submit");
 
-anchor.setAttribute("href","#header");
+anchor.setAttribute("href","#footer");
 
 // assigning text to element variables
-header1.textContent = "My";
+header1.textContent = "Add";
 header2.textContent = "Book"; 
 header3.textContent = "List";
 smallDescription.textContent = "A personal book collection."
@@ -159,9 +161,9 @@ titleHeading.textContent = "Title";
 authorHeading.textContent = "Author";
 ISBNHeading.textContent = "ISBN Number";
 
-footerBottom.textContent = "© 2021 by MyBookList. Proudly created by Omolemo & Rethabile.";
-joinUs.textContent = "JoinUs!";
-joinButton.textContent = "Subscribe"
+//footerBottom.textContent = "© 2021 by MyBookList. Proudly created by Omolemo & Rethabile.";
+//joinUs.textContent = "JoinUs!";
+//joinButton.textContent = "Subscribe"
 
 // functions
 // add item function
@@ -205,7 +207,7 @@ function addItem(e) {
    tableRow2.appendChild(tdISBN);
    tableRow2.appendChild(deleteButton);
    bookTable.appendChild(tableRow2);
-   alert("Book successfully added.");
+   alert("Done.");
 }
 
 // removing books
@@ -215,7 +217,7 @@ function removeItem(e) {
         if (confirm("Are you sure?")) {
             let row = e.target.parentElement;
             bookTable.removeChild(row);
-            alert("Book successfully removed.")
+            alert("Done.")
         }
     }
 }
@@ -285,8 +287,8 @@ bookTable.appendChild(tableRow);
 myHeader.appendChild(bookTable);
 
 myBody.insertBefore(footer,myScript);
-footer.appendChild(footerPicture);
-footer.appendChild(footerBottom);
+//footer.appendChild(footerPicture);
+//footer.appendChild(footerBottom);
 
 subscription.appendChild(joinUs);
 subscription.appendChild(joinForm);
@@ -303,4 +305,5 @@ myBody.insertBefore(jumpToTop,myScript);
 jumpToTop.appendChild(anchor);
 anchor.appendChild(arrow);
 
+//};
 

@@ -112,7 +112,7 @@ body,button {
 .listButton {
     padding: 10px 30px;
     background: transparent;
-    border: solid 1px white;
+    border: solid 0px white;
     color: white;
     height: 50px;
     width: 150px;
@@ -123,10 +123,10 @@ body,button {
     /* font-weight: bold; */
   }
 
-.listButton:hover {
+/*.listButton:hover {
     border: solid 1px rgb(192, 134, 95);
     color: rgb(192, 134, 95);
-}
+}*/
 
 .navigation {
     /* display: flex; */
@@ -279,7 +279,7 @@ body,button {
 	border: none;
 	border-bottom: 1.5px solid chocolate;
 	background: transparent;
-	color: white;
+	color: black;
 }
 .joinButton {
 	background-color: transparent;

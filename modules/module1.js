@@ -1,3 +1,5 @@
+//import { module_2 } from "./module2";
+
 // adding external stylesheet
 // let element = document.createElement("link");
 // element.setAttribute("rel", "stylesheet");
@@ -34,6 +36,12 @@ let aboutSection = document.createElement("div");
 let aboutSectionPicture = document.createElement("div");
 let aboutSectionWriting = document.createElement("div");
 
+//module 2 section
+//const module_div= document.createElement('div');
+//myBody.appendChild(module_div);
+//module_div.appendChild(module_2());
+
+
 let quoteSection = document.createElement("section");
 let sectionQuote = document.createElement("h1");
 let sectionQuote2 = document.createElement("h1");
@@ -66,7 +74,7 @@ aboutSection.classList = "aboutSection";
 aboutSectionPicture.classList = "aboutSectionPicture";
 aboutSectionWriting.classList = "aboutSectionWriting";
 
-quoteSection.classList = "quote";
+//quoteSection.classList = "quote";
 sectionQuote.classList = "sectionQuote";
 sectionQuote2.classList = "sectionQuote2";
 sectionQuote3.classList = "sectionQuote3";
@@ -78,7 +86,7 @@ sectionQuote4.classList = "sectionQuote4";
 heading.textContent = "My";
 span.textContent = "Book"; 
 description.textContent = " “A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.” ― George R.R. Martin";
-listButton.textContent = "AddBook";
+//listButton.textContent = "AddBook";
 headingLastPart.textContent = "List.";
 
 signUp.textContent = "SignUp";
@@ -116,11 +124,11 @@ aboutSection.appendChild(aboutSectionPicture);
 aboutSection.appendChild(aboutSectionWriting);
 middleSection.appendChild(aboutSection);
 
-myBody.insertBefore(quoteSection,myScript);
-quoteSection.appendChild(sectionQuote);
-quoteSection.appendChild(sectionQuote2);
-quoteSection.appendChild(sectionQuote3);
-quoteSection.appendChild(sectionQuote4);
+//myBody.insertBefore(quoteSection,myScript);
+//quoteSection.appendChild(sectionQuote);
+//quoteSection.appendChild(sectionQuote2);
+//quoteSection.appendChild(sectionQuote3);
+//quoteSection.appendChild(sectionQuote4);
 // return myBody;
 
 // };
@@ -132,9 +140,9 @@ quoteSection.appendChild(sectionQuote4);
 
 // export const Footer = (() => {
 //     const createFooter = () => {
-        let footer = document.createElement("footer");
-        let footerPicture = document.createElement("div");
-        let footerBottom = document.createElement("div");
+     //   let footer = document.createElement("footer");
+      //  let footerPicture = document.createElement("div");
+      //  let footerBottom = document.createElement("div");
         let subscription = document.createElement("div");
         let joinUs = document.createElement("p");
         let joinForm = document.createElement("form");
@@ -151,9 +159,9 @@ quoteSection.appendChild(sectionQuote4);
         let twitter = document.createElement("i");
         let instagram = document.createElement("i");
 
-        footer.classList = "footer";
-        footerPicture.classList = "footerPicture";
-        footerBottom.classList = "footerBottom";
+        //footer.classList = "footer";
+        //footerPicture.classList = "footerPicture";
+        //footerBottom.classList = "footerBottom";
         subscription.classList = "subscription";
         joinUs.classList = "joinUs";
         joinForm.classList = "joinForm";
@@ -161,7 +169,7 @@ quoteSection.appendChild(sectionQuote4);
         joinButton.classList = "joinButton";
 
         jumpToTop.id = "jumpToTop";
-        arrow.classList = "fa fa-angle-up";
+        arrow.classList = "fa fa-angle-down";
 
         icons.classList = "icons";
         facebook.classList = "fab fa-facebook";
@@ -176,13 +184,14 @@ quoteSection.appendChild(sectionQuote4);
 
         anchor.setAttribute("href","#header");
 
-        footerBottom.textContent = "© 2021 by MyBookList. Proudly created by Omolemo & Rethabile.";
+        //footerBottom.textContent = "© 2021 by MyBookList. Proudly created by Omolemo & Rethabile.";
         joinUs.textContent = "JoinUs!";
         joinButton.textContent = "Subscribe"
+        
 
-        myBody.insertBefore(footer,myScript);
-        footer.appendChild(footerPicture);
-        footer.appendChild(footerBottom);
+        //myBody.insertBefore(footer,myScript);
+        //footer.appendChild(footerPicture);
+        //footer.appendChild(footerBottom);
 
         subscription.appendChild(joinUs);
         subscription.appendChild(joinForm);
@@ -193,7 +202,7 @@ quoteSection.appendChild(sectionQuote4);
         joinForm.appendChild(joinInput);
         joinForm.appendChild(lineBreaks);
         joinForm.appendChild(joinButton);
-        footerPicture.appendChild(subscription);
+        //footerPicture.appendChild(subscription);
 
         myBody.insertBefore(jumpToTop,myScript);
         jumpToTop.appendChild(anchor);
