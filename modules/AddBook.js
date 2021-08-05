@@ -36,6 +36,8 @@
     let ISBNHeading = document.createElement("th");
     let emptySpace = document.createElement("th");
 
+    let homeButton = document.createElement("a");
+
     let footer = document.createElement("footer");
     let footerPicture = document.createElement("div");
     let footerBottom = document.createElement("div");
@@ -64,8 +66,6 @@
     header3.classList = "heading2";
     smallDescription.classList = "smallDescription";
 
-// searchContainer.classList = "searchContainer";
-// searchBar.classList = "searchBar";
 
     bookForm.id = "bookForm";
     titleDiv.classList = "form-group";
@@ -82,8 +82,6 @@
     ISBNInput.classList = "ISBNInput";
     addButton.classList = "addButton";
 
-// addedBookSection.classList = "addedBookSection";
-    // bookTable.classList = "bookTable";
 
     footer.classList = "footer";
     footerPicture.classList = "footerPicture";
@@ -116,6 +114,7 @@
     authorInput.setAttribute("required", '');
     ISBNInput.setAttribute("required", '');
 
+
     joinInput.setAttribute("type","text");
     joinInput.setAttribute("required","");
     joinInput.setAttribute("placeholder","Email*");
@@ -140,6 +139,7 @@
     footerBottom.textContent = "© 2021 by MyBookList. Proudly created by Omolemo & Rethabile.";
     joinUs.textContent = "JoinUs!";
     joinButton.textContent = "Subscribe"
+
 
 // functions
 // add item function
@@ -215,8 +215,7 @@
     bookForm.appendChild(ISBNDiv);
     bookForm.appendChild(addButton);
     myBody.insertBefore(bookForm,myScript);
-    bookTable.appendChild(lineBreaks);
-    bookTable.appendChild(lineBreaks);
+
 
     tableRow.appendChild(titleHeading);
     tableRow.appendChild(authorHeading);
@@ -224,6 +223,9 @@
     tableRow.appendChild(emptySpace);
     bookTable.appendChild(tableRow);
     myBody.insertBefore(bookTable,myScript);
+    bookTable.appendChild(lineBreaks);
+    bookTable.appendChild(lineBreaks);
+
 
     myBody.insertBefore(footer,myScript);
     footer.appendChild(footerPicture);

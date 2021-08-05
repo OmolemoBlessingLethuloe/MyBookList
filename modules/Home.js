@@ -50,6 +50,7 @@ export const HomePage = (() => {
         heading.classList = "heading";
         description.classList ="description";
         listButton.classList ="listButton";
+        listButtonAnchor.classList = "listButtonAnchor";
         span.classList = "headingSpan";
         headingLastPart.classList = "headingEnd";
 
