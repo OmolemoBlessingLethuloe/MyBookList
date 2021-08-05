@@ -69,7 +69,7 @@ body,button {
     /* height: 90vh; */
     background:
       linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-      url("landingPage.jfif") center center;
+      url("/images/landingPage.jfif") center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -121,10 +121,17 @@ body,button {
     font-size: large;
     border-radius: 0%;
     /* font-weight: bold; */
-  }
+}
+.listButtonAnchor {
+    text-decoration: none;
+    color: white;
+}
 
 .listButton:hover {
     border: solid 1px rgb(192, 134, 95);
+    color: rgb(192, 134, 95);
+}
+.listButtonAnchor:hover {
     color: rgb(192, 134, 95);
 }
 
@@ -186,7 +193,7 @@ body,button {
 .aboutSectionPicture {
     /* animation: fadeEffect 2s; */
     background:
-    url("stacked.jfif") center;
+    url("/images/stacked.jfif") center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -250,7 +257,7 @@ body,button {
 .footerPicture {
     background:
     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),
-    url("head.jfif") center;
+    url("/images/head.jfif") center;
     height: 650px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -351,7 +358,7 @@ body,button {
     /* position: fixed; */
     background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url("shelf.jpg") center;
+    url("/images/shelf.jpg") center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -458,7 +465,7 @@ body,button {
     border: solid 1px rgb(192, 134, 95);
 }
 
-.bookTable, th, td{
+table, th, td{
     width: 70%;
     margin: 50px auto;
     border: solid 1px rgb(192, 134, 95);
@@ -466,6 +473,7 @@ body,button {
     border-collapse: collapse;
     text-align: center;
     table-layout: auto;
+    /* margin-bottom: 50px; */
     /* display: flex;
     flex-direction: row;
     justify-content: center; */
