@@ -17,8 +17,11 @@ export const CreateFooter = (() => {
 
     let icons = document.createElement("div");
     let facebook = document.createElement("i");
+    let facebookAnchor = document.createElement("a");
     let twitter = document.createElement("i");
+    let twitterAnchor = document.createElement("a");
     let instagram = document.createElement("i");
+    let instagramAnchor = document.createElement("a");
 
     footer.classList = "footer";
     footerPicture.classList = "footerPicture";
@@ -38,12 +41,17 @@ export const CreateFooter = (() => {
     instagram.classList = "fab fa-instagram";
 
 // adding attributes 
-    joinInput.setAttribute("type","text");
+    joinInput.setAttribute("type","email");
     joinInput.setAttribute("required","");
     joinInput.setAttribute("placeholder","Email*");
     joinButton.setAttribute("type","submit");
 
     anchor.setAttribute("href","#header");
+    facebookAnchor.href = "https://www.facebook.com/";
+    twitterAnchor.href = "https://www.twitter.com";
+    instagramAnchor.href = "https://www.instagram.com";
+
+// adding text content
 
     footerBottom.textContent = "© 2021 by MyBookList. Proudly created by Omolemo & Rethabile.";
     joinUs.textContent = "JoinUs!";
@@ -55,9 +63,12 @@ export const CreateFooter = (() => {
 
     subscription.appendChild(joinUs);
     subscription.appendChild(joinForm);
-    icons.appendChild(facebook);
-    icons.appendChild(twitter);
-    icons.appendChild(instagram);
+    facebookAnchor.appendChild(facebook);
+    twitterAnchor.appendChild(twitter);
+    instagramAnchor.appendChild(instagram);
+    icons.appendChild(facebookAnchor);
+    icons.appendChild(twitterAnchor);
+    icons.appendChild(instagramAnchor);
     subscription.appendChild(icons);
     joinForm.appendChild(joinInput);
     joinForm.appendChild(lineBreaks);

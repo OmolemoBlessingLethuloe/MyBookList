@@ -12,6 +12,9 @@
 body{
     animation: fadeEffect 3s;
 }
+a {
+    color: black;
+}
 /* 
 @--keyframes fadeeffect {
     from {
