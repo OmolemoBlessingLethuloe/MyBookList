@@ -1,0 +1,145 @@
+/* second page */
+
+.headerPicture {
+    /* height: 90vh; */
+    /* position: fixed; */
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("shelf.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    opacity: 0.75;
+      /* margin: 0 auto; */
+
+}
+
+.heading1 {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 50px;
+    align-self: flex-start;
+    margin-top: 30px;
+}
+.headingSpan1 {
+    color: rgb(192, 134, 95);
+}
+
+.heading2 {
+    color: #fff;
+    font-size: 40px;
+    /* margin-left: 50px; */
+    align-self: flex-start;
+    /* margin-top: 30px; */
+}
+.smallDescription {
+    color: white;
+    align-self: flex-end;
+    margin-right: 50px;
+    font-weight: bolder;
+}
+.searchContainer {
+	margin-left: 50px; 
+    align-self: flex-start;
+
+}
+.searchContainer input[type="text"] {
+	padding: 6px;
+	width: 180px;
+	font-size: 15px;
+	margin-top: 8px;
+    border: none;
+	border-radius: 0%;
+	border-bottom: 1.5px solid rgb(209, 179, 160);;
+    border-left: 1.5px solid rgb(209, 179, 160);;
+	background: transparent;
+	/* color: white; */
+}
+.searchContainer input[type="text"]:focus {
+	border: 3px solid white;
+	/* background: white; */
+}
+
+#bookForm {
+    margin-top:10px;
+    display: flex;
+    background-attachment: fixed;
+    flex-direction: column;
+    /* column-gap: -100px; */
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    /* opacity: 0.7; */
+    height: 500px;
+
+}
+
+#bookForm input[type="text"] {
+    /* align-self: flex-start; */
+    width: 440px;
+    height: 20px;
+    border: none;
+    display: flex;
+    background-color: transparent;
+    padding: 20px;
+    border-bottom: solid 2px rgb(209, 179, 160);;
+    /* margin-right: -1000px; */
+}
+
+#bookForm label{
+    /* margin-left: -600px; */
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.addButton {
+    width: 440px;
+    height: 35px;
+    font-size: larger;
+    border: solid 1px rgb(192, 134, 95);
+    color: rgb(192, 134, 95);
+    background-color: transparent;
+
+}
+.addButton:hover {
+    background-color: rgb(192, 134, 95);
+    color: white;
+    border: solid 1px rgb(192, 134, 95);
+}
+
+.bookTable, th, td{
+    width: 70%;
+    margin: 50px auto;
+    border: solid 1px rgb(192, 134, 95);
+    /* border-top: none; */
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: auto;
+    /* margin-bottom: 50px; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+th {
+    font-weight: bolder;
+    background-color: rgb(192, 134, 95);
+    opacity: 0.8;
+    color: white;
+    /* border-top: none; */
+}
+.deleteButton {
+    margin: 15px;
+    background-color: rgb(192, 134, 95);
+    border: none;
+    color: white;
+}

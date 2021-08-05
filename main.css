@@ -458,7 +458,7 @@ body,button {
     border: solid 1px rgb(192, 134, 95);
 }
 
-.bookTable, th, td{
+table, th, td{
     width: 70%;
     margin: 50px auto;
     border: solid 1px rgb(192, 134, 95);
@@ -466,6 +466,7 @@ body,button {
     border-collapse: collapse;
     text-align: center;
     table-layout: auto;
+    /* margin-bottom: 50px; */
     /* display: flex;
     flex-direction: row;
     justify-content: center; */
